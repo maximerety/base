@@ -1,22 +1,36 @@
 # base
 
-TODO: Write a description here
+A simple CLI to convert a binary data string representation between bases (hex, base32, base64).
 
 ## Installation
 
-TODO: Write installation instructions here
+```bash
+# Pick a destination
+DEST="~/.local/bin"
+
+crystal build --release -o $DEST/base src/base.cr
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+Usage: base [options]
+    -i, --input-base INPUT_BASE      Specify input base in [16, 32, 64]
+    -o, --output-base OUTPUT_BASE    Specify output base in [16, 32, 64]
+    -p, --padding                    Specify if output should be padded
+    -u, --url-safe                   Specify if output should be url safe
+    -h, --help                       Show this message
+```
 
 ## Development
 
-TODO: Write development instructions here
-
+```bash
+# Run tests
+crystal spec
+```
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/base/fork>)
+1. Fork it (<https://github.com/maximerety/base/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -24,4 +38,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [maximerety](https://github.com/your-github-user) - creator and maintainer
+- [maximerety](https://github.com/maximerety) - creator and maintainer
