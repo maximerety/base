@@ -1,0 +1,6 @@
+version: 2.0
+shards:
+  base32:
+    git: https://github.com/didactic-drunk/base32.git
+    version: 0.1.1+git.commit.dc20cd10a4f6a873dc632f01a35e496f14c3880f
+

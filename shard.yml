@@ -11,3 +11,7 @@ targets:
 crystal: 1.6.2
 
 license: MIT
+
+dependencies:
+  base32:
+    github: didactic-drunk/base32
