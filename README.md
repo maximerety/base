@@ -5,10 +5,13 @@ A simple CLI to convert a binary data string representation between bases (hex, 
 ## Installation
 
 ```bash
-# Pick a destination
-DEST="~/.local/bin"
+# Install dependencies
+shards install
 
-crystal build --release -o $DEST/base src/base.cr
+# Pick a destination
+DEST="${HOME}/.local/bin"
+
+crystal build --release -o "$DEST/base" src/base.cr
 ```
 
 ## Usage
@@ -28,6 +31,7 @@ Usage: base [options]
 # Run tests
 crystal spec
 ```
+
 ## Contributing
 
 1. Fork it (<https://github.com/maximerety/base/fork>)
